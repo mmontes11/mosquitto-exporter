@@ -18,9 +18,11 @@ help:
 clean:
 	rm -rf bin
 
-build: clean
-	@mkdir -p $(BUILD_DIR)
-	go build -o $(MOSQUITTO_EXPORTER_BINARY) -ldflags="$(LDFLAGS)" .
+build:
+	go build -o bin/mosquitto-exporter -v .
+
+release:
+	./scripts/release.sh
 
 linux: export GOOS=linux
 linux: build
