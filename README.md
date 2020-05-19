@@ -1,5 +1,8 @@
 Mosquitto Exporter
 =============================
+
+[![Build Status](https://travis-ci.org/mmontes11/redis_exporter.svg?branch=master)](https://travis-ci.org/mmontes11/redis_exporter)
+
 Prometheus exporter for the [Mosquitto MQTT message broker](https://mosquitto.org/).
 
 There is a docker image available:
